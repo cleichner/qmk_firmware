@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
  * |   BS   |   Z  |   X  |   C  |   V  |   B  |      |      |  |      |      |   N  |   M  | ,  < | . >  | /  ? |  ' "   |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
- *                        | FIDG |      |Shift | BS   | Tab  |  | Enter| Space|  Esc |      |      |
+ *                        | FIDG | Shift|  BS  | BS   | Tab  |  | Enter| Space|  Esc |      |      |
  *                        |      |      |      | Lower| Raise|  | Raise| Lower|      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_RBRC,    KC_Q,    KC_W,    KC_E,     KC_R,    KC_T,                                     KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_LBRC,
         MV_LFT,   CTL_A,   ALT_S,  LGUI_D,   LSFT_F,    KC_G,                                     KC_H,  RSFT_J,  RGUI_K,  LALT_L,CTL_SCLN, MV_RGT,
       KC_BSPACE,   KC_Z,    KC_X,    KC_C,     KC_V,    KC_B, _______, _______, _______, _______, KC_N,    KC_M, KC_COMM,  KC_DOT, KC_SLSH, KC_QUOT,
-                              DF(_FIDGET),  _______, KC_LSFT, KC_BSPC, LWR_BSC, RSE_TAB, RSE_ETR, LWR_SPC,  KC_ESC, XXXXXXX
+                              DF(_FIDGET),  KC_LSFT, KC_BSPC, LWR_BSC, RSE_TAB, RSE_ETR, LWR_SPC, KC_ESC, XXXXXXX, XXXXXXX
     ),
 /*
  * Lower Layer: Symbols
