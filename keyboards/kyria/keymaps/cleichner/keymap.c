@@ -67,7 +67,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------+-------------.  ,-------------+------+------+------+------+------+--------|
  * |        |      | Pg Up| Mute | Pg Dn| VolDn|      |      |  |      |      | MLeft| Mdown| MUp  |MRight| Zoom-|        |
  * `----------------------+------+------+------+------+------|  |------+------+------+------+------+----------------------'
- *                        |EEPROM| flash|      | cd ..| cd - |  |      |      |      | Pg Dn| Pg Up|
+ *                        |EEPROM| flash|      | cd ..| cd - |  | MS1  |      |      | Pg Dn| Pg Up|
  *                        | Reset|      |      |      |      |  |      |      |      |      |      |
  *                        `----------------------------------'  `----------------------------------'
  */
@@ -75,7 +75,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                        KC_6,    KC_7,    KC_8,    KC_9,     KC_0, _______,
       TAB_LFT, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT,  ZOOM_IN, TAB_RGT,
       _______, _______, KC_PGUP, KC_MUTE, KC_PGDN, KC_VOLD, _______, _______, _______, _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, ZOOM_OUT, _______,
-                                 EEP_RST, MK_FLSH, _______,   CD_UP, CD_BACK, _______, _______, _______, KC_PGDN, KC_PGUP
+                                 EEP_RST, MK_FLSH, _______,   CD_UP, CD_BACK, KC_MS_BTN1, KC_MS_BTN2, _______, KC_PGDN, KC_PGUP
     ),
 /*
  * Adjust Layer: Function keys, RGB
