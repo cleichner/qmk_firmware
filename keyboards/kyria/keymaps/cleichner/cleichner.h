@@ -26,12 +26,17 @@ enum custom_keycodes {
 #define LALT_L LALT_T(KC_L)
 #define CTL_SCLN RCTL_T(KC_SCLN)
 
-#define LWR_SPC LT(_LOWER, KC_SPACE)
 #define RSE_ETR LT(_RAISE, KC_ENTER)
+#define LWR_SPC LT(_LOWER, KC_SPACE)
+#define ADJ_ESC LT(_ADJUST, KC_ESC)
 
-#define LWR_BSC LT(_LOWER, KC_BSPACE)
-#define RSE_TAB LT(_RAISE, KC_TAB)
+// I now have two tabs, so maybe a dedicated key for repeating or maybe
+// use one as a leader?
+#define RSE_BSC LT(_RAISE, KC_BSPACE)
+#define LWR_TAB LT(_LOWER, KC_TAB)
+#define ADJ_TAB LT(_ADJUST, KC_TAB)
 
+#define MV_UP LCTL(KC_UP)
 #define MV_LFT LCTL(KC_LEFT)
 #define MV_RGT LCTL(KC_RIGHT)
 #define TAB_LFT LGUI(LSFT(KC_LBRC))
