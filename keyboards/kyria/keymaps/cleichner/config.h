@@ -29,7 +29,7 @@
 #endif
 
 // Configure the global tapping term (default: 200ms)
-#define TAPPING_TERM 160
+#define TAPPING_TERM 135
 
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
@@ -39,3 +39,6 @@
 
 // Apply the modifier on keys that are tapped during a short hold of a modtap
 #define PERMISSIVE_HOLD
+
+// Keep a count of how many chords are possible
+#define COMBO_COUNT 1
